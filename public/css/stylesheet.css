@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Regular.eot');
+    src: url('../fonts/Vazirmatn-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazirmatn-Regular.woff2') format('woff2'),
+        url('../fonts/Vazirmatn-Regular.woff') format('woff'),
+        url('../fonts/Vazirmatn-Regular.ttf') format('truetype'),
+        url('../fonts/Vazirmatn-Regular.svg#Vazirmatn-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Medium.eot');
+    src: url('../fonts/Vazirmatn-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazirmatn-Medium.woff2') format('woff2'),
+        url('../fonts/Vazirmatn-Medium.woff') format('woff'),
+        url('../fonts/Vazirmatn-Medium.ttf') format('truetype'),
+        url('../fonts/Vazirmatn-Medium.svg#Vazirmatn-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Bold.eot');
+    src: url('../fonts/Vazirmatn-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vazirmatn-Bold.woff2') format('woff2'),
+        url('../fonts/Vazirmatn-Bold.woff') format('woff'),
+        url('../fonts/Vazirmatn-Bold.ttf') format('truetype'),
+        url('../fonts/Vazirmatn-Bold.svg#Vazirmatn-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
