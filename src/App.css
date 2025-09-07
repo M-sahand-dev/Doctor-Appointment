@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
+.benefits-scroll-container {
+  overflow-x: auto;
+  cursor: grab;
+  padding: 20px 0;
+  margin: 20px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.benefits-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.benefits-scroll-container.grabbing {
+  cursor: grabbing;
+  scroll-snap-type: x mandatory;
+}
+
+
+@media (max-width: 768px) {
+  .scroll-indicator {
+    text-align: center;
+    margin-top: 10px;
+    color: #a0aec0;
+    font-size: 14px;
+  }
+}
+
 @theme {
     /* font Vazirmatn */
     --font-vazirmatn: "Vazirmatn",sans-serif;
@@ -72,6 +100,9 @@
     --text-Captions-L:12px;
     --text-Captions-M:11px;
     --text-Captions-S:10px;
+    /* radius */
+    --radius-1xl:8px;
+    --radius-1.25xl:10px;
 
 
 }

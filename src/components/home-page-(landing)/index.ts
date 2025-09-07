@@ -1,1 +1,2 @@
-export * from "./Landing-Page";
+export * from "./LandingPage";
+export * from "./hero-Section";

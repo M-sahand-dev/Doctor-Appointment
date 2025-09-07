@@ -3,3 +3,10 @@ export interface NavigationItem {
   title: string;
   to: string;
 }
+
+export interface BenefitItem {
+  id: number;
+  icon: string;
+  title: string;
+  text: string;
+}
