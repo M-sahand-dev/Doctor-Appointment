@@ -57,4 +57,21 @@
     --color-gray--950:#262626;
     /* color alert */
     --color-alert:#FFB800;
+    /* font size */
+        /* Heading */
+    --text-H1:32px;
+    --text-H2:24px;
+    --text-H3:20px;
+        /* Body */
+    --text-Body-L:18px;
+    --text-Body-M:16px;
+    --text-Body-S:15px;
+    --text-XS:14px;
+        /* Captions */
+    --text-XL:13px;
+    --text-Captions-L:12px;
+    --text-Captions-M:11px;
+    --text-Captions-S:10px;
+
+
 }
