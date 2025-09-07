@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import { Link } from "react-router-dom";
-import { Benefits } from "../../index";
+import { Benefits, SearchBox } from "../../index";
 
 export const HeroSection = (): JSX.Element => {
   // Hero Section (Section 1) responsive design
@@ -40,6 +40,9 @@ export const HeroSection = (): JSX.Element => {
       </div>
       <div className="mt-6">
         <Benefits />
+      </div>
+      <div className="mt-6">
+        <SearchBox />
       </div>
     </section>
   );
