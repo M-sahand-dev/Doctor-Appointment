@@ -5,3 +5,4 @@ export * from "./populerDoctors";
 export * from "./prescription";
 export * from "./newDr";
 export * from "./Comments";
+export * from "./Questions";

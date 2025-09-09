@@ -51,3 +51,9 @@ export interface Comment {
   description: string;
   aboutDr?: string;
 }
+
+export interface Questions {
+  id: number;
+  question: string;
+  answer: string;
+}

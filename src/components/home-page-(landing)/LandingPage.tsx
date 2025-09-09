@@ -6,6 +6,7 @@ import {
   NewDr,
   PopulerDoctors,
   Prescription,
+  Questions,
   SkilsList,
 } from "../index";
 
@@ -22,6 +23,7 @@ export const LandingPage = (): JSX.Element => {
           <Prescription />
           <NewDr />
           <Comments />
+          <Questions />
         </main>
       </div>
     </div>
