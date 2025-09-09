@@ -11,6 +11,9 @@ export const Questions = (): JSX.Element => {
     setShowMore(showMore === question ? null : question);
   };
   return (
+    // Questions Section (FAQ)
+    // You can replace the questions array with your own data source
+    // (questions is imported from ../../constant)
     <section className="questions my-12">
       <div className="flex items-center justify-between mb-6">
         <TitleProduct text="">سوالات متداول</TitleProduct>
