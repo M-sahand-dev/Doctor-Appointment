@@ -17,7 +17,7 @@ export interface SkillItem {
   title: string;
 }
 
-interface Comment {
+export interface Comment {
   id: number;
   name: string;
   image: string;
@@ -40,4 +40,14 @@ export interface Doctor {
   linkSite: string;
   linkInstagramAcc: string;
   comments: Comment[];
+}
+
+export interface Comment {
+  id: number;
+  name: string;
+  image: string;
+  distinction: number;
+  date: string;
+  description: string;
+  aboutDr?: string;
 }

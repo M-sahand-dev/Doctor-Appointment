@@ -1,5 +1,6 @@
 import type {
   BenefitItem,
+  Comment,
   Doctor,
   NavigationItem,
   SkillItem,
@@ -295,5 +296,76 @@ export const drsData: Doctor[] = [
           "دکتر وارسته رو از اینستاگرام میشناختم و اینجا تونستم به راحتی نوبت رزرو کنم.",
       },
     ],
+  },
+];
+
+export const commentsUser: Comment[] = [
+  {
+    id: 1,
+    name: "فاطمه",
+    image: "/public/image/user/1.png",
+    distinction: 4.5,
+    date: "۱۴۰۳/۱۰/۲۰",
+    description: "سلام دکتر بسیار خون گرم و مهربون بود.",
+    aboutDr: "درباره دکتر زهرا وارسته",
+  },
+  {
+    id: 2,
+    name: "سحر",
+    image: "/public/image/user/2.png",
+    distinction: 4,
+    date: "۱۴۰۳/۱۰/۲۰",
+    description:
+      "دکتر عالی هستند و تشخیصشون درست در اولین معاینه بیماری را تشخیص دادند و با تجویز یک نسخه درمان کردند.",
+    aboutDr: "درباره دکتر محمود محمودی",
+  },
+  {
+    id: 3,
+    name: "علی",
+    image: "/public/image/user/3.png",
+    distinction: 4,
+    date: "۱۴۰۳/۱۰/۲۰",
+    description: "دکتر عالی هستند و تشخیصشون درست بود و زود خوب شدم",
+    aboutDr: "درباره دکتر علی وارسته",
+  },
+  {
+    id: 4,
+    name: "مریم",
+    image: "/public/image/user/4.png",
+    distinction: 4,
+    date: "۱۴۰۳/۱۰/۲۰",
+    description:
+      "دکتر وارسته رو از اینستاگرام میشناختم و اینجا تونستم به راحتی نوبت رزرو کنم.",
+    aboutDr: "درباره دکتر زهرا وارسته",
+  },
+  {
+    id: 5,
+    name: "رها احمدی",
+    image: "/public/image/user/5.png",
+    distinction: 5,
+    date: "۱۴۰۳/۱۰/۲۰",
+    description:
+      "نوب گیری در سریعترین زمان ممکن انجام شد و واقعا برای من راضی کننده بود تشخیص پزشک هم عالی بود",
+    aboutDr: "درباره دکتر زهرا وارسته",
+  },
+  {
+    id: 6,
+    name: "رها مرادی",
+    image: "/public/image/user/6.png",
+    distinction: 5,
+    date: "۱۴۰۳/۱۰/۲۰",
+    description:
+      "نوب گیری در سریعترین زمان ممکن انجام شد و واقعا برای من راضی کننده بود تشخیص پزشک هم عالی بود",
+    aboutDr: "درباره دکتر  لعیا زنگنه",
+  },
+  {
+    id: 7,
+    name: "مهدی سهند",
+    image: "/public/image/user/7.png",
+    distinction: 5,
+    date: "۱۴۰۳/۱۰/۲۰",
+    description:
+      "نوب گیری در سریعترین زمان ممکن انجام شد و واقعا برای من راضی کننده بود تشخیص پزشک هم عالی بود",
+    aboutDr: "درباره دکتر  لعیا زنگنه",
   },
 ];

@@ -131,5 +131,6 @@
     --text-Captions-S:10px;
     /* radius */
     --radius-1xl:8px;
-    --radius-1.25xl:10px;
+    --radius-1.25xl:10px;/* 10px */
+    --radius-1.5:12px;/* 12px */
 }

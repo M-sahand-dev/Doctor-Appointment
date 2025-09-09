@@ -1,5 +1,13 @@
 import type { JSX } from "react";
-import { Header, HeroSection, PopulerDoctors, SkilsList } from "../index";
+import {
+  Comments,
+  Header,
+  HeroSection,
+  NewDr,
+  PopulerDoctors,
+  Prescription,
+  SkilsList,
+} from "../index";
 
 export const LandingPage = (): JSX.Element => {
   return (
@@ -11,6 +19,9 @@ export const LandingPage = (): JSX.Element => {
         <main className="my-10">
           <SkilsList />
           <PopulerDoctors />
+          <Prescription />
+          <NewDr />
+          <Comments />
         </main>
       </div>
     </div>
