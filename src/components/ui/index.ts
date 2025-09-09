@@ -1,1 +1,4 @@
 export * from "./Logo";
+export * from "./TitleProduct";
+export * from "./BoxInformation";
+export * from "./SeeAll";
