@@ -1,3 +1,9 @@
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaTelegramPlane,
+  FaWhatsapp,
+} from "react-icons/fa";
 import type {
   BenefitItem,
   Blog,
@@ -6,6 +12,7 @@ import type {
   NavigationItem,
   Questions,
   SkillItem,
+  SocialMediaLink,
 } from "../type/type";
 
 export const navigationItems: NavigationItem[] = [
@@ -474,4 +481,11 @@ export const articles: Blog[] = [
       "ورزش منظم نه تنها به سلامت جسمانی کمک می‌کند، بلکه تاثیر مثبتی بر سلامت ذهن نیز دارد. در این مقاله، فواید ورزش و نکات مهم برای شروع یک برنامه ورزشی را بررسی می‌کنیم.",
     date: "۱۴۰۳/۱۱/۱۵",
   },
+];
+
+export const socialMediaLinks: SocialMediaLink[] = [
+  { id: 1, icon: FaWhatsapp, to: "https://www.whatsapp.com/" },
+  { id: 2, icon: FaInstagram, to: "https://www.instagram.com/" },
+  { id: 3, icon: FaTelegramPlane, to: "https://www.telegram.org/" },
+  { id: 4, icon: FaLinkedinIn, to: "https://www.linkedin.com/" },
 ];

@@ -20,7 +20,7 @@ export const Blog = (): JSX.Element => {
     setIsEnd(swiper.isEnd);
   };
   return (
-    <article>
+    <article className="mb-28">
       <div className="">
         <div className="flex items-center justify-between mb-6">
           <TitleProduct text="">آخرین مقالات</TitleProduct>

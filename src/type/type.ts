@@ -1,3 +1,5 @@
+import type { IconType } from "react-icons";
+
 export interface NavigationItem {
   id: number;
   title: string;
@@ -64,4 +66,10 @@ export interface Blog {
   title: string;
   description: string;
   date: string;
+}
+
+export interface SocialMediaLink {
+  id: number;
+  icon: IconType;
+  to: string;
 }

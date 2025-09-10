@@ -112,8 +112,11 @@
     --color-gray--950:#262626;
     /* color alert */
     --color-alert:#FFB800;
+    /* border email box  */
+    --color-border-email-box:#E7E8F2;
     /* color stroke  */
     --color-galsses:#11111140;
+    --color-galsses-primary:#203c861c;
     /* font size */
         /* Heading */
     --text-H1:32px;
@@ -130,6 +133,7 @@
     --text-Captions-M:11px;
     --text-Captions-S:10px;
     /* radius */
+    --radius-0.75xl:6px;/* 6px */
     --radius-1xl:8px;
     --radius-1.25xl:10px;/* 10px */
     --radius-1.5:12px;/* 12px */
