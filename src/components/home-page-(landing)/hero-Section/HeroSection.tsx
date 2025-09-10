@@ -33,7 +33,7 @@ export const HeroSection = (): JSX.Element => {
           </div>
         </div>
         <img
-          src={"/public/image/hospital-people.png"}
+          src={"/image/hospital-people.png"}
           alt="hospital-people"
           className="max-2xl:w-[650px] max-xl:w-[500px] max-lg:w-full"
         />

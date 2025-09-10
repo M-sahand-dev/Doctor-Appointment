@@ -13,7 +13,7 @@ export const NavigationMenuToggle = ({
   const id = useId();
   return (
     <nav
-      className={`max-lg:block hidden absolute top-24 h-screen w-60 bg-white z-10 mx-auto  py-3 max-sm:px-4  ${
+      className={`max-lg:block hidden absolute top-20 h-screen w-60 bg-white z-10 mx-auto  py-3 max-sm:px-4  ${
         isMenuOpen ? "right-28 max-sm:right-4" : "-right-96"
       }`}>
       <div className="">

@@ -31,7 +31,7 @@ export const Blog = (): JSX.Element => {
             ref={swiperRef}
             modules={[Navigation]}
             spaceBetween={16}
-            slidesPerView={4}
+            slidesPerView={3}
             onSlideChange={handleSlideChange}
             onInit={(swiper) => {
               setIsBeginning(swiper.isBeginning);

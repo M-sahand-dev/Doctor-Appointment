@@ -41,19 +41,19 @@ export const navigationItems: NavigationItem[] = [
 export const benefitsItems: BenefitItem[] = [
   {
     id: 1,
-    icon: "/public/image/benefits/setting.png",
+    icon: "/image/benefits/setting.png",
     title: "مدیریت و تغییر نوبت ها به راحتی",
     text: "توانایی لغو، تغییر و مدیریت نوبت ها به راحتی",
   },
   {
     id: 2,
-    icon: "/public/image/benefits/comment-01.png",
+    icon: "/image/benefits/comment-01.png",
     title: "اطمینان از انتخاب مجرب‌ترین پزشکان",
     text: "بهترین پزشکان را با توجه به نظرات کاربران انتخاب کنید",
   },
   {
     id: 3,
-    icon: "/public/image/benefits/clock-02.png",
+    icon: "/image/benefits/clock-02.png",
     title: "دسترسی ۲۴ ساعته به پزشکان",
     text: "در هر زمانی میتوانید نوبت خود را رزرو کنید ",
   },
@@ -62,37 +62,37 @@ export const benefitsItems: BenefitItem[] = [
 export const skillsList: SkillItem[] = [
   {
     id: 1,
-    image: "/public/image/skils/heart.png",
+    image: "/image/skils/heart.png",
     title: " قلب و عروق",
   },
   {
     id: 2,
-    image: "/public/image/skils/orthopedics 1.png",
+    image: "/image/skils/orthopedics 1.png",
     title: "ارتوپد",
   },
   {
     id: 3,
-    image: "/public/image/skils/brain.png",
+    image: "/image/skils/brain.png",
     title: " مغزواعصاب",
   },
   {
     id: 4,
-    image: "/public/image/skils/pulmonology 1.png",
+    image: "/image/skils/pulmonology 1.png",
     title: " دستگاه تنفسی",
   },
   {
     id: 5,
-    image: "/public/image/skils/eye-test 1.png",
+    image: "/image/skils/eye-test 1.png",
     title: " چشم پزشکی",
   },
   {
     id: 6,
-    image: "/public/image/skils/pediatric 1.png",
+    image: "/image/skils/pediatric 1.png",
     title: " اطفال",
   },
   {
     id: 7,
-    image: "/public/image/skils/dental-floss 1.png",
+    image: "/image/skils/dental-floss 1.png",
     title: "گوش حلق.بینی",
   },
 ];
@@ -101,7 +101,7 @@ export const drsData: Doctor[] = [
   {
     id: 1,
     name: "زهرا وارسته",
-    image: "/public/image/drs/1.png",
+    image: "/image/drs/1.png",
     specialization: "متخصص قلب و عروق",
     city: "تهران",
     distinction: 3.5,
@@ -116,7 +116,7 @@ export const drsData: Doctor[] = [
       {
         id: 1,
         name: "فاطمه",
-        image: "/public/image/user-photo/Ellipse 39 (1).png",
+        image: "/image/user-photo/Ellipse 39 (1).png",
         distinction: 4,
         date: "۱۴۰۳/۱۰/۲۰",
         description:
@@ -127,7 +127,7 @@ export const drsData: Doctor[] = [
   {
     id: 2,
     name: "علی وارسته",
-    image: "/public/image/drs/2.png",
+    image: "/image/drs/2.png",
     specialization: "متخصص قلب و عروق",
     city: "تهران",
     distinction: 3.5,
@@ -142,7 +142,7 @@ export const drsData: Doctor[] = [
       {
         id: 1,
         name: "فاطمه",
-        image: "/public/image/user-photo/Ellipse 39 (1).png",
+        image: "/image/user-photo/Ellipse 39 (1).png",
         distinction: 4,
         date: "۱۴۰۳/۱۰/۲۰",
         description:
@@ -153,7 +153,7 @@ export const drsData: Doctor[] = [
   {
     id: 3,
     name: " بهنوش حسینی",
-    image: "/public/image/drs/3.png",
+    image: "/image/drs/3.png",
     specialization: "جراح گوش حلق بینی",
     city: "تهران",
     distinction: 3.5,
@@ -168,7 +168,7 @@ export const drsData: Doctor[] = [
       {
         id: 1,
         name: "فاطمه",
-        image: "/public/image/user-photo/Ellipse 39 (1).png",
+        image: "/image/user-photo/Ellipse 39 (1).png",
         distinction: 4,
         date: "۱۴۰۳/۱۰/۲۰",
         description:
@@ -179,7 +179,7 @@ export const drsData: Doctor[] = [
   {
     id: 4,
     name: "علی راد",
-    image: "/public/image/drs/4.png",
+    image: "/image/drs/4.png",
     specialization: "متخصص ریه",
     city: "تهران",
     distinction: 3.5,
@@ -194,7 +194,7 @@ export const drsData: Doctor[] = [
       {
         id: 1,
         name: "فاطمه",
-        image: "/public/image/user-photo/Ellipse 39 (1).png",
+        image: "/image/user-photo/Ellipse 39 (1).png",
         distinction: 4,
         date: "۱۴۰۳/۱۰/۲۰",
         description:
@@ -205,7 +205,7 @@ export const drsData: Doctor[] = [
   {
     id: 5,
     name: "لعیا زنگنه",
-    image: "/public/image/drs/5.png",
+    image: "/image/drs/5.png",
     specialization: "متخصص قلب و عروق",
     city: "تهران",
     distinction: 3.5,
@@ -220,7 +220,7 @@ export const drsData: Doctor[] = [
       {
         id: 1,
         name: "فاطمه",
-        image: "/public/image/user-photo/Ellipse 39 (1).png",
+        image: "/image/user-photo/Ellipse 39 (1).png",
         distinction: 4,
         date: "۱۴۰۳/۱۰/۲۰",
         description:
@@ -231,7 +231,7 @@ export const drsData: Doctor[] = [
   {
     id: 6,
     name: " یاشار پناهی",
-    image: "/public/image/drs/6.png",
+    image: "/image/drs/6.png",
     specialization: "متخصص روانشناس بالینی",
     city: "تهران",
     distinction: 3.5,
@@ -246,7 +246,7 @@ export const drsData: Doctor[] = [
       {
         id: 1,
         name: "فاطمه",
-        image: "/public/image/user-photo/Ellipse 39 (1).png",
+        image: "/image/user-photo/Ellipse 39 (1).png",
         distinction: 4,
         date: "۱۴۰۳/۱۰/۲۰",
         description:
@@ -257,7 +257,7 @@ export const drsData: Doctor[] = [
   {
     id: 7,
     name: "زهرا سعادتی",
-    image: "/public/image/drs/7.png",
+    image: "/image/drs/7.png",
     specialization: "متخصص گوش و حلق و بینی",
     city: "تهران",
     distinction: 3.5,
@@ -272,7 +272,7 @@ export const drsData: Doctor[] = [
       {
         id: 1,
         name: "فاطمه",
-        image: "/public/image/user-photo/Ellipse 39 (1).png",
+        image: "/image/user-photo/Ellipse 39 (1).png",
         distinction: 4,
         date: "۱۴۰۳/۱۰/۲۰",
         description:
@@ -283,7 +283,7 @@ export const drsData: Doctor[] = [
   {
     id: 8,
     name: " ماهان گروسی",
-    image: "/public/image/drs/8.png",
+    image: "/image/drs/8.png",
     specialization: "فوق متخصص دنداپزشکی",
     city: "تهران",
     distinction: 3.5,
@@ -298,7 +298,7 @@ export const drsData: Doctor[] = [
       {
         id: 1,
         name: "فاطمه",
-        image: "/public/image/user-photo/Ellipse 39 (1).png",
+        image: "/image/user-photo/Ellipse 39 (1).png",
         distinction: 4,
         date: "۱۴۰۳/۱۰/۲۰",
         description:
@@ -312,7 +312,7 @@ export const commentsUser: Comment[] = [
   {
     id: 1,
     name: "فاطمه",
-    image: "/public/image/user/1.png",
+    image: "/image/user/1.png",
     distinction: 4.5,
     date: "۱۴۰۳/۱۰/۲۰",
     description: "سلام دکتر بسیار خون گرم و مهربون بود.",
@@ -321,7 +321,7 @@ export const commentsUser: Comment[] = [
   {
     id: 2,
     name: "سحر",
-    image: "/public/image/user/2.png",
+    image: "/image/user/2.png",
     distinction: 4,
     date: "۱۴۰۳/۱۰/۲۰",
     description:
@@ -331,7 +331,7 @@ export const commentsUser: Comment[] = [
   {
     id: 3,
     name: "علی",
-    image: "/public/image/user/3.png",
+    image: "/image/user/3.png",
     distinction: 4,
     date: "۱۴۰۳/۱۰/۲۰",
     description: "دکتر عالی هستند و تشخیصشون درست بود و زود خوب شدم",
@@ -340,7 +340,7 @@ export const commentsUser: Comment[] = [
   {
     id: 4,
     name: "مریم",
-    image: "/public/image/user/4.png",
+    image: "/image/user/4.png",
     distinction: 4,
     date: "۱۴۰۳/۱۰/۲۰",
     description:
@@ -350,7 +350,7 @@ export const commentsUser: Comment[] = [
   {
     id: 5,
     name: "رها احمدی",
-    image: "/public/image/user/5.png",
+    image: "/image/user/5.png",
     distinction: 5,
     date: "۱۴۰۳/۱۰/۲۰",
     description:
@@ -360,7 +360,7 @@ export const commentsUser: Comment[] = [
   {
     id: 6,
     name: "رها مرادی",
-    image: "/public/image/user/6.png",
+    image: "/image/user/6.png",
     distinction: 5,
     date: "۱۴۰۳/۱۰/۲۰",
     description:
@@ -370,7 +370,7 @@ export const commentsUser: Comment[] = [
   {
     id: 7,
     name: "مهدی سهند",
-    image: "/public/image/user/7.png",
+    image: "/image/user/7.png",
     distinction: 5,
     date: "۱۴۰۳/۱۰/۲۰",
     description:
@@ -436,7 +436,7 @@ export const articles: Blog[] = [
   {
     id: 1,
     title: "۱۰ نشانه هشدار دهنده مشکلات قلبی ",
-    image: "/public/image/article/1.png",
+    image: "/image/article/1.png",
     description:
       "آیا می‌دانید که مشکلات قلبی می‌توانند به صورت ناگهانی بروز کنند؟ در این مقاله، با ۱۰ نشانه هشدار دهنده مشکلات قلبی آشنا شوید و راه‌های پیشگیری از آن‌ها را بیاموزید.",
     date: "۱۴۰۳/۰۸/۱۵",
@@ -444,7 +444,7 @@ export const articles: Blog[] = [
   {
     id: 2,
     title: "۵ گام ساده برای پیشگیری از دیابت",
-    image: "/public/image/article/2.png",
+    image: "/image/article/2.png",
     description:
       "دیابت یکی از بیماری‌های شایع در جهان است. با رعایت ۵ گام ساده، می‌توانید از ابتلا به دیابت پیشگیری کنید و زندگی سالم‌تری داشته باشید.",
     date: "۱۴۰۳/۰۹/۱۰",
@@ -452,7 +452,7 @@ export const articles: Blog[] = [
   {
     id: 3,
     title: "چگونه بهترین دکتر را برای نیازهای خود پیدا کنیم؟",
-    image: "/public/image/article/3.png",
+    image: "/image/article/3.png",
     description:
       "انتخاب دکتر مناسب می‌تواند تاثیر زیادی بر سلامت شما داشته باشد. در این مقاله، نکات مهم برای پیدا کردن بهترین دکتر برای نیازهای خود را بررسی می‌کنیم.",
     date: "۱۴۰۳/۱۰/۰۵",
@@ -460,7 +460,7 @@ export const articles: Blog[] = [
   {
     id: 4,
     title: "اهمیت خواب کافی برای سلامت روان",
-    image: "/public/image/article/4.jpg",
+    image: "/image/article/4.jpg",
     description:
       "خواب کافی نقش مهمی در حفظ سلامت روان دارد. در این مقاله، به بررسی اهمیت خواب و راهکارهایی برای بهبود کیفیت خواب می‌پردازیم.",
     date: "۱۴۰۳/۱۰/۲۰",
@@ -468,7 +468,7 @@ export const articles: Blog[] = [
   {
     id: 5,
     title: "تغذیه سالم: راهنمایی برای یک زندگی بهتر",
-    image: "/public/image/article/5.jpg",
+    image: "/image/article/5.jpg",
     description:
       "تغذیه سالم یکی از عوامل کلیدی برای داشتن یک زندگی بهتر است. در این مقاله، نکات مهم برای تغذیه سالم و ایجاد عادات غذایی مثبت را بررسی می‌کنیم.",
     date: "۱۴۰۳/۱۱/۰۲",
@@ -476,7 +476,7 @@ export const articles: Blog[] = [
   {
     id: 6,
     title: "ورزش منظم و تاثیر آن بر سلامت جسم و ذهن",
-    image: "/public/image/article/6.jpg",
+    image: "/image/article/6.jpg",
     description:
       "ورزش منظم نه تنها به سلامت جسمانی کمک می‌کند، بلکه تاثیر مثبتی بر سلامت ذهن نیز دارد. در این مقاله، فواید ورزش و نکات مهم برای شروع یک برنامه ورزشی را بررسی می‌کنیم.",
     date: "۱۴۰۳/۱۱/۱۵",

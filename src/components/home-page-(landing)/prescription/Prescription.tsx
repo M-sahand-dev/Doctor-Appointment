@@ -26,7 +26,7 @@ export const Prescription = (): JSX.Element => {
             </Link>
             <div className=" ">
               <img
-                src="/public/image/prescription/Ornament 29.png"
+                src="/image/prescription/Ornament 29.png"
                 alt=""
                 className=" opacity-70"
               />
@@ -34,7 +34,7 @@ export const Prescription = (): JSX.Element => {
           </div>
         </div>
         <img
-          src="/public/image/prescription/prescription .png"
+          src="/image/prescription/prescription .png"
           alt="prescription"
           className=" max-lg:w-full max-lg:rounded-2xl h-full"
         />

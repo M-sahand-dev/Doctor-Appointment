@@ -3,7 +3,7 @@ import { RiSearch2Line } from "react-icons/ri";
 
 export const SearchBox = (): JSX.Element => {
   return (
-    <div className="bg-[url('/public/image/Doctor_Holding_Stethoscope.webp')]  rounded-2xl bg-no-repeat bg-center bg-cover bg-fixed h-[300px] w-full">
+    <div className="bg-[url('/image/Doctor_Holding_Stethoscope.webp')]  rounded-2xl bg-no-repeat bg-center bg-cover bg-fixed h-[300px] w-full">
       <div className="bg-galsses w-full h-full rounded-2xl">
         <div className="w-full h-full flex items-center justify-center flex-col gap-8 px-72 py-4 max-2xl:px-60 max-xl:px-48 max-lg:px-36 max-md:px-24 max-sm:px-12">
           <h1 className="text-white 2xl:text-4xl xl:text-3xl lg:text-2xl   font-medium text-center text-H1">

@@ -16,7 +16,7 @@ export const Article = ({
       <img
         src={image}
         alt={title}
-        className="w-[390px] h-[256px] rounded-t-1.25xl"
+        className=" h-[256px] rounded-t-1.25xl w-full"
       />
       <div className="flex flex-col gap-2 px-4 py-3">
         <h3 className=" text-gray--800 font-medium text-XS">{title}</h3>
