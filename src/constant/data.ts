@@ -24,7 +24,7 @@ export const navigationItems: NavigationItem[] = [
   {
     id: 2,
     title: "سوالات متداول",
-    to: "/",
+    to: "/FAQ",
   },
   {
     id: 3,
