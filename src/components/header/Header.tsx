@@ -27,7 +27,7 @@ export const Header = (): JSX.Element => {
 
   // header component with logo and navigation
   return (
-    <header className="lg:border-b lg:border-gray--100 relative">
+    <header className="lg:border-b lg:border-gray--100 fixed top-0 left-0 w-full bg-white z-50">
       <div className=" mx-auto px-28 py-3 max-sm:px-4 flex justify-between items-center w-full relative">
         <div className="max-lg:hidden">
           <Logo />

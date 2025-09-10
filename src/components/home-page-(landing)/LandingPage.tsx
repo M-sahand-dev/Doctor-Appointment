@@ -18,7 +18,7 @@ export const LandingPage = (): JSX.Element => {
     <div className="">
       {/* header component */}
       <Header />
-      <div className="mx-auto px-28 py-3 max-sm:px-4">
+      <div className="mx-auto px-28 py-3 max-sm:px-4 mt-20">
         {/* hero section component */}
         <HeroSection />
         <main className="my-10">
