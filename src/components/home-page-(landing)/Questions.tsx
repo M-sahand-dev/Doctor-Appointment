@@ -7,6 +7,8 @@ export const Questions = (): JSX.Element => {
   const id = useId();
   const [showMore, setShowMore] = useState<string | null>(null);
 
+  const limitedQuestion = questions.slice(0, 6);
+
   const handelShowMore = (question: string) => {
     setShowMore(showMore === question ? null : question);
   };
@@ -21,7 +23,7 @@ export const Questions = (): JSX.Element => {
       </div>
       <div className="p-6 rounded-2xl bg-white border border-gray--100">
         {/* Questions List */}
-        {questions.map((question) => (
+        {limitedQuestion.map((question) => (
           <article
             key={question.id + id}
             onClick={() => handelShowMore(question.question)}
