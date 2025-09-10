@@ -13,6 +13,9 @@ export const Comments = (): JSX.Element => {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
 
+  // Limit to first 8 comments
+  const limitedComments = commentsUser.slice(0, 8);
+
   const handleSlideChange = (swiper: SwiperType) => {
     setIsBeginning(swiper.isBeginning);
     setIsEnd(swiper.isEnd);
@@ -45,7 +48,7 @@ export const Comments = (): JSX.Element => {
               slidesPerView: 4,
             },
           }}>
-          {commentsUser.map((user) => (
+          {limitedComments.map((user) => (
             <SwiperSlide key={user.id + id}>
               <CommentBox
                 id={user.id}

@@ -14,6 +14,9 @@ export const NewDr = (): JSX.Element => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef<SwiperRef | null>(null);
 
+  // Limit to first 8 doctors
+  const limitedDrsData = drsData.slice(0, 8);
+
   const handleSlideChange = (swiper: SwiperType) => {
     setIsBeginning(swiper.isBeginning);
     setIsEnd(swiper.isEnd);
@@ -49,7 +52,7 @@ export const NewDr = (): JSX.Element => {
               slidesPerView: 4,
             },
           }}>
-          {drsData.map((item, index) => (
+          {limitedDrsData.map((item, index) => (
             <SwiperSlide key={item.id + id}>
               <div
                 className={`transition-all duration-300 ${
