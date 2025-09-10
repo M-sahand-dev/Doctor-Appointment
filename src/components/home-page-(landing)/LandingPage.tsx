@@ -1,5 +1,6 @@
 import type { JSX } from "react";
 import {
+  Blog,
   Comments,
   Header,
   HeroSection,
@@ -24,6 +25,7 @@ export const LandingPage = (): JSX.Element => {
           <NewDr />
           <Comments />
           <Questions />
+          <Blog />
         </main>
       </div>
     </div>

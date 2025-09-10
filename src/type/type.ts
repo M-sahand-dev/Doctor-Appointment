@@ -57,3 +57,11 @@ export interface Questions {
   question: string;
   answer: string;
 }
+
+export interface Blog {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  date: string;
+}
