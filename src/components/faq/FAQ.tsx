@@ -17,8 +17,8 @@ export const FAQ = (): JSX.Element => {
         <div className=" my-6">
           <TitleProduct text="">سوالات متداول</TitleProduct>
         </div>
-        <main className="my-10">
-          <div className="p-6 rounded-2xl bg-white border border-gray--100">
+        <main className="my-10 relative">
+          <div className="p-6 rounded-2xl  border border-gray--100 ">
             {/* Questions List */}
             {questions.map((question) => (
               <article
@@ -51,6 +51,11 @@ export const FAQ = (): JSX.Element => {
             ))}
             <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-sm:grid-cols-1"></div>
           </div>
+          <img
+            className="absolute top-56 left-36 w-48 max-lg:w-32 max-sm:w-24"
+            src="/image/؟.png"
+            alt="FAQ Illustration"
+          />
         </main>
       </div>
       <Footer />
