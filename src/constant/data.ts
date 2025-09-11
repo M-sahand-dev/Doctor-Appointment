@@ -9,6 +9,7 @@ import type {
   Blog,
   Comment,
   Doctor,
+  HonorarilyUs,
   NavigationItem,
   Questions,
   SkillItem,
@@ -29,7 +30,7 @@ export const navigationItems: NavigationItem[] = [
   {
     id: 3,
     title: "درباره ما",
-    to: "/",
+    to: "/aboutUs",
   },
   {
     id: 4,
@@ -488,4 +489,27 @@ export const socialMediaLinks: SocialMediaLink[] = [
   { id: 2, icon: FaInstagram, to: "https://www.instagram.com/" },
   { id: 3, icon: FaTelegramPlane, to: "https://www.telegram.org/" },
   { id: 4, icon: FaLinkedinIn, to: "https://www.linkedin.com/" },
+];
+
+export const honorarilyUs: HonorarilyUs[] = [
+  {
+    number: 5,
+    title: "پزشک در سیستم",
+  },
+  {
+    number: 3,
+    title: "کلینیک فعال",
+  },
+  {
+    number: 500,
+    title: " نوبت ثبت‌شده",
+  },
+  {
+    number: 2,
+    title: "  متخصص تایید شده",
+  },
+  {
+    number: 100,
+    title: "کاربر فعال",
+  },
 ];

@@ -73,3 +73,8 @@ export interface SocialMediaLink {
   icon: IconType;
   to: string;
 }
+
+export interface HonorarilyUs {
+  number: number;
+  title: string;
+}
