@@ -41,9 +41,9 @@ export const HeroSection = (): JSX.Element => {
       <div className="mt-6">
         <Benefits />
       </div>
-      <div className="mt-6">
+      <Link to={"/"} className="mt-6">
         <SearchBox />
-      </div>
+      </Link>
     </section>
   );
 };
