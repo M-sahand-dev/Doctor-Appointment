@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 
 export const Filter = (): JSX.Element => {
   return (
-    <div className="p-4 flex flex-col gap-4 bg-white rounded-1xl border border-gray--100 w-72">
+    <div className="p-4 flex flex-col gap-4 bg-white rounded-1xl border border-gray--100 w-96 max-2xl:w-80 max-xl:hidden max-2xl:rounded-none absolute ">
       <div className="flex justify-between items-center">
         <h4 className="flex items-center gap-1 text-Body-L font-medium text-black">
           <CiFilter className="w-6 h-6" />

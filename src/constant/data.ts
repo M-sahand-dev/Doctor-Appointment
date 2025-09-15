@@ -105,7 +105,7 @@ export const drsData: Doctor[] = [
     image: "/image/drs/1.png",
     specialization: "متخصص قلب و عروق",
     city: "تهران",
-    distinction: 3.5,
+    distinction: 5,
     doctorNumber: 40223,
     address: "تهران، ستارخان، خیابان هفتم، پلاک ۴۰",
     description:

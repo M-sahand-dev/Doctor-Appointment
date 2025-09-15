@@ -26,7 +26,6 @@ export const BoxInformation = ({
         </div>
         <div className="flex flex-col py-4 px-5 gap-2 *:flex  *:items-center">
           <div className="justify-between">
-            <h5 className=" font-medium text-base text-center">دکتر {name}</h5>
             <div className="flex items-center gap-1 ">
               <div className="text-alert flex items-center gap-0.5 text-XL">
                 <GiRoundStar />
