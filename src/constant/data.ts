@@ -20,7 +20,7 @@ export const navigationItems: NavigationItem[] = [
   {
     id: 1,
     title: "لیست پزشکان",
-    to: "/",
+    to: "/doctorList",
   },
   {
     id: 2,

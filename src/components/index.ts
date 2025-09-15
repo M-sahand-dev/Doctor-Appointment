@@ -5,3 +5,4 @@ export * from "./log-in";
 export * from "./ui";
 export * from "./faq";
 export * from "./aboutUs";
+export * from "./doctorsListPDP";
