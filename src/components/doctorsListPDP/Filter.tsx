@@ -1,20 +1,36 @@
-import type { JSX } from "react";
+import React, { type JSX } from "react";
 import { CiFilter, CiSearch } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 
-export const Filter = (): JSX.Element => {
+export const Filter = ({
+  toggleFilter,
+  setToggleFilter,
+}: {
+  toggleFilter: boolean;
+  setToggleFilter: React.Dispatch<React.SetStateAction<boolean>>;
+}): JSX.Element => {
   return (
-    <div className="p-4 flex flex-col gap-4 bg-white rounded-1xl border border-gray--100 w-96 max-2xl:w-80 max-xl:hidden max-2xl:rounded-none absolute ">
+    <div
+      className={`p-4 flex flex-col gap-4 bg-white rounded-1xl border border-gray--100 w-96 max-2xl:w-80 max-2xl:rounded-none absolute ${
+        !toggleFilter ? "max-xl:hidden" : "max-xl:flex max-xl:w-full"
+      } `}>
       <div className="flex justify-between items-center">
         <h4 className="flex items-center gap-1 text-Body-L font-medium text-black">
           <CiFilter className="w-6 h-6" />
           فیلترها
         </h4>
-        <button className="flex items-center gap-1 text-Body-S font-medium bg-blue--50 rounded-4xl p-2 text-blue--500 cursor-pointer">
-          حذف همه فیلترها
-          <IoClose className="w-6 h-6" />
-        </button>
+        <div className="flex gap-4">
+          <button className="flex items-center gap-1 text-Body-S font-medium bg-blue--50 rounded-4xl p-2 text-blue--500 cursor-pointer">
+            حذف همه فیلترها
+            <IoClose className="w-6 h-6" />
+          </button>
+          <button
+            onClick={() => setToggleFilter(!toggleFilter)}
+            className="text-red--500 bg-red--50 p-2 rounded-full cursor-pointer max-xl:block hidden">
+            <IoClose className="w-6 h-6" />
+          </button>
+        </div>
       </div>
       <div className="flex flex-col py-2 gap-2">
         <div className="flex justify-between items-center text-Body-M font-bold text-gray--500 p-4 rounded-1xl border border-gray--100">
@@ -122,7 +138,8 @@ export const Filter = (): JSX.Element => {
       </div>
       <button
         type="button"
-        className="p-2.5 grid place-items-center text-white bg-blue--500 rounded-1xl">
+        onClick={() => setToggleFilter(!toggleFilter)}
+        className="p-2.5 grid place-items-center text-white bg-blue--500 rounded-1xl cursor-pointer">
         اعمال فیلترها
       </button>
     </div>
