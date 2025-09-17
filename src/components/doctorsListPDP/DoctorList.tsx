@@ -116,6 +116,7 @@ export const DoctorList = (): JSX.Element => {
                     {currentItems.map((item) => (
                       <BoxDoctor
                         key={item.id + id}
+                        id={item.id}
                         image={item.image}
                         name={item.name}
                         specialization={item.specialization}

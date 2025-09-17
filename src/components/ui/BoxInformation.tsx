@@ -1,7 +1,7 @@
 import type { JSX } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { GiRoundStar } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const BoxInformation = ({
   id,
@@ -18,8 +18,9 @@ export const BoxInformation = ({
   city: string;
   distinction: number;
 }): JSX.Element => {
+  const location = useLocation();
   return (
-    <Link to={`/`} id={id + name} className="">
+    <Link to={`/detail/${id}/${location.search}`} id={id + name} className="">
       <aside className="w-full h-full rounded-1.25xl bg-white border border-gray--100">
         <div className="image-Gradient  rounded-t-1.25xl flex justify-center">
           <img className=" rounded-t-1.25xl" src={image} alt={name} />

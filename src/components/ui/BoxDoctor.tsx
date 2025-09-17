@@ -7,6 +7,7 @@ import { TiTick } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 export const BoxDoctor = ({
+  id,
   image,
   name,
   specialization,
@@ -14,6 +15,7 @@ export const BoxDoctor = ({
   doctorNumber,
   address,
 }: {
+  id: number;
   image: string;
   name: string;
   specialization: string;
@@ -112,7 +114,9 @@ export const BoxDoctor = ({
         <button type="button" className="bg-blue--500 text-white">
           رزرو نوبت <FaChevronLeft />
         </button>
-        <Link to={`/`} className="text-gray--400 border border-gray--100">
+        <Link
+          to={`/detail/${id}/${location.search}`}
+          className="text-gray--400 border border-gray--100">
           مشاهده پروفایل
         </Link>
       </div>
