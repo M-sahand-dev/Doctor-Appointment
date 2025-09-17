@@ -16,10 +16,41 @@ export const DoctorList = (): JSX.Element => {
   const id = useId();
   const [toggleFilter, setToggleFilter] = useState(false);
   const [sortMenu, setSortMenu] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4;
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = drsData.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(drsData.length / itemsPerPage);
 
   const handelFilterBox = () => {
     setToggleFilter(!toggleFilter);
     console.log(toggleFilter);
+  };
+
+  const paginate = (pageNumber: number) => {
+    if (pageNumber > 0 && pageNumber <= totalPages) {
+      setCurrentPage(pageNumber);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  // Function to return persian number
+  const toPersianDigits = (number: number) => {
+    const persianDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+    return number
+      .toString()
+      .replace(/\d/g, (digit: string) => persianDigits[parseInt(digit)]);
+  };
+
+  // Generate page numbers for pagination
+  const getPageNumbers = () => {
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(i);
+    }
+    return pageNumbers;
   };
 
   return (
@@ -60,7 +91,7 @@ export const DoctorList = (): JSX.Element => {
                     </div>
                   </div>
                   <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    className={`overflow-hidden transition-all duration-500 ease-in-out hidden max-xl:block ${
                       sortMenu ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                     }`}>
                     <div className="flex flex-col mt-2 bg-white rounded-lg shadow-md p-2">
@@ -82,7 +113,7 @@ export const DoctorList = (): JSX.Element => {
                     </div>
                   </div>
                   <div className="w-full flex flex-col gap-4 my-8">
-                    {drsData.map((item) => (
+                    {currentItems.map((item) => (
                       <BoxDoctor
                         key={item.id + id}
                         image={item.image}
@@ -95,6 +126,21 @@ export const DoctorList = (): JSX.Element => {
                     ))}
                   </div>
                   {/* Page nation */}
+                  <div className="flex items-center justify-center gap-2 mt-8">
+                    {/* Page numbers */}
+                    {getPageNumbers().map((number) => (
+                      <button
+                        key={number}
+                        onClick={() => paginate(number)}
+                        className={`rounded-2.5xl grid place-items-center py-2 px-4 ${
+                          currentPage === number
+                            ? "bg-blue--100 text-blue--600 hover:bg-blue--200"
+                            : ""
+                        } cursor-pointer`}>
+                        {toPersianDigits(number)}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </main>
