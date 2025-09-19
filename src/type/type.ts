@@ -78,3 +78,9 @@ export interface HonorarilyUs {
   number: number;
   title: string;
 }
+export interface DataTiemType {
+  id: number;
+  time: string;
+  active: boolean;
+  reserv: boolean;
+}

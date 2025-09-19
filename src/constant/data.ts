@@ -8,6 +8,7 @@ import type {
   BenefitItem,
   Blog,
   Comment,
+  DataTiemType,
   Doctor,
   HonorarilyUs,
   NavigationItem,
@@ -512,4 +513,16 @@ export const honorarilyUs: HonorarilyUs[] = [
     number: 100,
     title: "کاربر فعال",
   },
+];
+
+export const dataTiem: DataTiemType[] = [
+  { id: 1, time: "۹:۱۵", active: false, reserv: true },
+  { id: 2, time: "۹:۳۰", active: false, reserv: true },
+  { id: 3, time: "۹:۴۵", active: false, reserv: true },
+  { id: 4, time: "۱۰:۰۰", active: false, reserv: true },
+  { id: 5, time: "۱۰:۱۵", active: true, reserv: false },
+  { id: 6, time: "۱۰:۳۰", active: true, reserv: false },
+  { id: 7, time: "۱۰:۴۵", active: true, reserv: false },
+  { id: 8, time: "۱۱:۰۰", active: true, reserv: false },
+  { id: 9, time: "۱۱:۱۵", active: true, reserv: false },
 ];

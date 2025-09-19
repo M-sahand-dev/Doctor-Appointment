@@ -1,11 +1,15 @@
 import { Calendar, DateObject } from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
-import { useState, type JSX, type MouseEventHandler } from "react";
+import { useId, useState, type JSX, type MouseEventHandler } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { dataTiem } from "../../constant";
+import type { DataTiemType } from "../../type/type";
 
 export const Calender = (): JSX.Element => {
+  const id = useId();
   const [selectedDate, setSelectedDate] = useState<DateObject | null>(null);
+  const [selectedTimeId, setSelectedTimeId] = useState<number | null>(null);
   const weekDays = [
     "شنبه",
     "یکشنبه",
@@ -18,6 +22,15 @@ export const Calender = (): JSX.Element => {
 
   const handleDateSelect = (date: DateObject) => {
     setSelectedDate(date);
+  };
+
+  const handleSelectTime = (itemId: number) => {
+    const item = dataTiem.find((item) => item.id === itemId);
+    if (item && item.active && !item.reserv) {
+      setSelectedTimeId((prevSelected) =>
+        prevSelected === itemId ? null : itemId
+      );
+    }
   };
 
   return (
@@ -57,6 +70,32 @@ export const Calender = (): JSX.Element => {
           return props;
         }}
       />
+
+      <div className="">
+        <div className="grid grid-cols-3 gap-2 py-4">
+          {dataTiem.map((item: DataTiemType) => {
+            const isDisabled = item.reserv || !item.active;
+            const isSelected = selectedTimeId === item.id;
+
+            return (
+              <button
+                type="button"
+                key={item.id + id}
+                onClick={() => handleSelectTime(item.id)}
+                disabled={isDisabled}
+                className={`rounded-0.75xl p-2 text-Captions-L font-medium text-center ${
+                  isDisabled
+                    ? "text-gray-400 bg-gray-100 cursor-not-allowed"
+                    : isSelected
+                    ? "text-white bg-blue-500"
+                    : "border border-blue-500 text-blue-500"
+                }`}>
+                {item.time}
+              </button>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };
