@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import { Calender, Footer, Header, Information } from "../index";
+import { Calender, CommentsBox, Footer, Header, Information } from "../index";
 import { Link, useParams } from "react-router-dom";
 import { drsData } from "../../constant";
 import { BsArrowRightCircle } from "react-icons/bs";
@@ -14,7 +14,7 @@ export const DetailPage = (): JSX.Element => {
     <div className="">
       <Header />
       <div className="mx-auto px-28 py-3 max-sm:px-4 mt-20">
-        <div className="flex items-center gap-2 my-10">
+        <div className="flex items-center gap-2 my-6">
           <Link to={"/"}>
             <BsArrowRightCircle className="w-6 h-6" />
           </Link>
@@ -22,8 +22,16 @@ export const DetailPage = (): JSX.Element => {
         </div>
         <main className=" w-full relative">
           <div className="flex justify-between gap-5">
-            <Information drInformation={drInformation} />
-            <Calender />
+            <div className="">
+              <Information drInformation={drInformation} />
+              <div className="hidden max-xl:block my-10">
+                <Calender />
+              </div>
+              <CommentsBox drInformation={drInformation} />
+            </div>
+            <div className="max-xl:hidden">
+              <Calender />
+            </div>
           </div>
         </main>
       </div>
