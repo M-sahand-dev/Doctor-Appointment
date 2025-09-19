@@ -44,17 +44,6 @@
 
 }
 
-@media (max-width: 768px) {
-  .scroll-indicator {
-    text-align: center;
-    margin-top: 10px;
-    color: #a0aec0;
-    font-size: 14px;
-  }
-}
-
-
-
 @theme {
     /* font Vazirmatn */
     --font-vazirmatn: "Vazirmatn",sans-serif;
@@ -138,4 +127,41 @@
     --radius-1.25xl:10px;/* 10px */
     --radius-1.5:12px;/* 12px */
     --radius-2.5xl:20px;
+}
+
+/* Calendar styles */
+.rmdp-week{
+  gap: 1rem;
+  padding: 6px 4px;
+}
+
+.rmdp-calendar .rmdp-week-day {
+  font-size: var(--text-Captions-S);
+  color: var(--color-gray--600);
+  padding: 6px 0;
+  
+}
+
+.rmdp-calendar .rmdp-day {
+  font-weight: 500;
+  font-size: var(--text-Captions-L);
+  color: var(--color-gray--400);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.rmdp-header-values{
+  font-size: var(--text-Body-L);
+  font-weight: bold;
+  color: var(--color-gray--950);
+}
+.rmdp-shadow{
+  box-shadow: none;
+
+}
+
+.rmdp-calendar .rmdp-day.rmdp-selected {
+  background-color: var(--color-blue--200);
+  color: var(--color-blue--800);
+  border-radius: 50%;
 }
