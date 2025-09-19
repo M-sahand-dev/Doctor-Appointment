@@ -155,10 +155,6 @@
   font-weight: bold;
   color: var(--color-gray--950);
 }
-.rmdp-shadow{
-  box-shadow: none;
-
-}
 
 .rmdp-calendar .rmdp-day.rmdp-selected {
   background-color: var(--color-blue--200);
