@@ -27,7 +27,7 @@ export const Calender = (): JSX.Element => {
   };
 
   return (
-    <div className="calendar-container p-4 rounded-1.5 border border-gray--100">
+    <div className="calendar-container p-4 rounded-1.5 border border-gray--100 h-[640px]">
       <div className="rounded-1.5 border border-gray--100 p-3">
         <div className="flex items-center justify-between">
           <h2 className="text font-bold text-Body-L text-gray--950">تقویم</h2>
