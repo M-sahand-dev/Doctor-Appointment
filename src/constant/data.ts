@@ -526,3 +526,13 @@ export const dataTiem: DataTiemType[] = [
   { id: 8, time: "۱۱:۰۰", active: true, reserv: false },
   { id: 9, time: "۱۱:۱۵", active: true, reserv: false },
 ];
+
+export const weekDays: string[] = [
+  "شنبه",
+  "یکشنبه",
+  "دوشنبه",
+  "سه‌شنبه",
+  "چهارشنبه",
+  "پنج‌شنبه",
+  "جمعه",
+];

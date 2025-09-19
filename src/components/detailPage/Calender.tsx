@@ -4,22 +4,14 @@ import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 import { useId, useState, type JSX, type MouseEventHandler } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { dataTiem } from "../../constant";
+import { dataTiem, weekDays } from "../../constant";
 import type { DataTiemType } from "../../type/type";
+import { Link } from "react-router-dom";
 
 export const Calender = (): JSX.Element => {
   const id = useId();
   const [selectedDate, setSelectedDate] = useState<DateObject | null>(null);
   const [selectedTimeId, setSelectedTimeId] = useState<number | null>(null);
-  const weekDays = [
-    "شنبه",
-    "یکشنبه",
-    "دوشنبه",
-    "سه‌شنبه",
-    "چهارشنبه",
-    "پنج‌شنبه",
-    "جمعه",
-  ];
 
   const handleDateSelect = (date: DateObject) => {
     setSelectedDate(date);
@@ -111,6 +103,11 @@ export const Calender = (): JSX.Element => {
           })}
         </div>
       </div>
+      <Link
+        className=" bg-blue--500 text-center grid text-white p-3 rounded-1xl font-medium text-Body-M"
+        to={`/`}>
+        رزرو نوبت
+      </Link>
     </div>
   );
 };
