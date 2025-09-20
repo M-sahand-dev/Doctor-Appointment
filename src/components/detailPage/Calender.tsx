@@ -6,10 +6,11 @@ import { useId, useState, type JSX, type MouseEventHandler } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { dataTiem, weekDays } from "../../constant";
 import type { DataTiemType } from "../../type/type";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-export const Calender = (): JSX.Element => {
-  const id = useId();
+export const Calender = ({ id }: { id: number }): JSX.Element => {
+  const location = useLocation();
+  const idKey = useId();
   const [selectedDate, setSelectedDate] = useState<DateObject | null>(null);
   const [selectedTimeId, setSelectedTimeId] = useState<number | null>(null);
 
@@ -89,7 +90,7 @@ export const Calender = (): JSX.Element => {
             return (
               <button
                 type="button"
-                key={item.id + id}
+                key={item.id + idKey}
                 onClick={() => handleSelectTime(item.id)}
                 disabled={isDisabled}
                 className={`rounded-0.75xl p-2 text-Captions-L font-medium text-center ${
@@ -107,7 +108,7 @@ export const Calender = (): JSX.Element => {
       </div>
       <Link
         className=" bg-blue--500 text-center grid text-white p-3 rounded-1xl font-medium text-Body-M"
-        to={`/`}>
+        to={`/detail/${id}${location.search}/appointmentInfo`}>
         رزرو نوبت
       </Link>
     </div>

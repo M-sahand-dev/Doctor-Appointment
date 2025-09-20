@@ -25,17 +25,18 @@ export const DetailPage = (): JSX.Element => {
             <div className="">
               <Information drInformation={drInformation} />
               <div className="hidden max-xl:block my-10">
-                <Calender />
+                <Calender id={drInformation?.id ?? 0} />
               </div>
               <CommentsBox drInformation={drInformation} />
             </div>
             <div className="max-xl:hidden">
-              <Calender />
+              <Calender id={drInformation?.id ?? 0} />
             </div>
           </div>
         </main>
       </div>
       <Footer />
+      {/* <Outlet /> */}
     </div>
   );
 };

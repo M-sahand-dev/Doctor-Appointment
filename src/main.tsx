@@ -5,6 +5,7 @@ import App from "./App.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
   AboutUs,
+  AppointmentInfo,
   DetailPage,
   DoctorList,
   FAQ,
@@ -20,7 +21,11 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/doctorList" element={<DoctorList />} />
-          <Route path="/detail/:id" element={<DetailPage />} />
+          <Route path="/detail/:id" element={<DetailPage />}></Route>
+          <Route
+            path="/detail/:id/appointmentInfo"
+            element={<AppointmentInfo />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
