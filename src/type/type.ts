@@ -84,3 +84,10 @@ export interface DataTiemType {
   active: boolean;
   reserv: boolean;
 }
+
+export type BankOption = {
+  id: string;
+  name: string;
+  logo: string;
+  alt: string;
+};

@@ -10,6 +10,7 @@ import {
   DoctorList,
   FAQ,
   LandingPage,
+  PaymentInfo,
 } from "./components";
 
 createRoot(document.getElementById("root")!).render(
@@ -21,11 +22,12 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/doctorList" element={<DoctorList />} />
-          <Route path="/detail/:id" element={<DetailPage />}></Route>
+          <Route path="/detail/:id" element={<DetailPage />} />
           <Route
             path="/detail/:id/appointmentInfo"
             element={<AppointmentInfo />}
           />
+          <Route path="/detail/:id/paymentInfo" element={<PaymentInfo />} />
         </Route>
       </Routes>
     </BrowserRouter>

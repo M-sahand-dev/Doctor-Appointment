@@ -176,7 +176,7 @@ export const AppointmentInfo = (): JSX.Element => {
               </div>
             </div>
             <Link
-              to={`/`}
+              to={`/detail/${drInformation?.id}${location.search}/paymentInfo`}
               className="p-2.5  rounded-1xl bg-blue--500 grid place-items-center mx-44 max-2xl:mx-36 max-xl:mx-28 max-lg:mx-0">
               <div className="flex text-white items-center gap-1.5">
                 ادامه

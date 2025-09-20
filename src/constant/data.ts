@@ -5,6 +5,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import type {
+  BankOption,
   BenefitItem,
   Blog,
   Comment,
@@ -535,4 +536,19 @@ export const weekDays: string[] = [
   "چهارشنبه",
   "پنج‌شنبه",
   "جمعه",
+];
+
+export const banks: BankOption[] = [
+  {
+    id: "saman-bank",
+    name: "بانک سامان",
+    logo: "/image/bank/saman.png",
+    alt: "saman-bank",
+  },
+  {
+    id: "parsian-bank",
+    name: "بانک پارسیان",
+    logo: "/image/bank/parsian.png",
+    alt: "parsian-bank",
+  },
 ];
