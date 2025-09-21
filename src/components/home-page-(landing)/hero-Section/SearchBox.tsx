@@ -23,9 +23,7 @@ export const SearchBox = ({
             <input
               type="search"
               className="w-full outline-hidden"
-              name=""
-              id=""
-              value={searchParams.get("filter") || ""}
+              value={searchParams?.get("filter") ?? ""}
               onChange={(e) => {
                 const filter = e.target.value;
                 if (filter) {
