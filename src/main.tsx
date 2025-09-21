@@ -12,6 +12,7 @@ import {
   LandingPage,
   PaymentInfo,
 } from "./components";
+import { SuccessErrorPay } from "./components/detailPage/SuccessErrorPay.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -28,6 +29,11 @@ createRoot(document.getElementById("root")!).render(
             element={<AppointmentInfo />}
           />
           <Route path="/detail/:id/paymentInfo" element={<PaymentInfo />} />
+          {/* for test success or error pay ❗❗*/}
+          <Route
+            path="/detail/:id/SuccessErrorPay"
+            element={<SuccessErrorPay />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

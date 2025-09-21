@@ -27,7 +27,7 @@ export const PaymentInfo = (): JSX.Element => {
             {/* information appointment */}
             <PeymentInfoAppointment drInformation={drInformation} />
             {/* payment appointement */}
-            <BoxPayment />
+            <BoxPayment id={drInformation?.id ?? 0} />
           </div>
         </main>
       </div>

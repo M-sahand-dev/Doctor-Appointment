@@ -3,7 +3,7 @@ import { banks } from "../../constant";
 import { Link } from "react-router-dom";
 import { FaChevronLeft } from "react-icons/fa";
 
-export const BoxPayment = (): JSX.Element => {
+export const BoxPayment = ({ id }: { id: number }): JSX.Element => {
   const [selectedBank, setSelectedBank] = useState<string>("");
   const handleBankSelect = (bankId: string) => {
     setSelectedBank(bankId);
@@ -85,7 +85,7 @@ export const BoxPayment = (): JSX.Element => {
           </label>
         </div>
         <Link
-          to={`/`}
+          to={`/detail/${id}${location.search}/SuccessErrorPay`}
           className="grid place-items-center bg-blue--500 rounded-1xl p-3">
           <div className="flex items-center gap-2 text-white text-Body-M font-medium">
             پرداخت
