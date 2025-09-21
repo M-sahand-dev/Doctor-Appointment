@@ -10,7 +10,7 @@ import {
 import { drsData } from "../../constant";
 import { CiFilter } from "react-icons/ci";
 import { FaSortAmountDownAlt } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
 
 export const DoctorList = (): JSX.Element => {
   const id = useId();
@@ -18,11 +18,18 @@ export const DoctorList = (): JSX.Element => {
   const [sortMenu, setSortMenu] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
+  const [searchParams, setSearchParams] = useSearchParams();
 
+  const filteredData = drsData.filter((dr) => {
+    const filter = searchParams.get("filter");
+    if (!filter) return true;
+    const name = dr.name.toLowerCase();
+    return name.startsWith(filter.toLowerCase());
+  });
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = drsData.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(drsData.length / itemsPerPage);
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   const handelFilterBox = () => {
     setToggleFilter(!toggleFilter);
@@ -61,7 +68,10 @@ export const DoctorList = (): JSX.Element => {
         <div className="">
           <Header />
           <div className="mx-auto px-28 py-3 max-sm:px-4 mt-20">
-            <SearchBox />
+            <SearchBox
+              searchParams={searchParams}
+              setSearchParams={setSearchParams}
+            />
             <main className="my-10 w-full relative">
               <div className="flex gap-11 relative">
                 <Filter

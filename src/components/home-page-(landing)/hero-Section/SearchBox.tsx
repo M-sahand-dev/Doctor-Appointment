@@ -1,7 +1,14 @@
 import type { JSX } from "react";
 import { RiSearch2Line } from "react-icons/ri";
+import { type SetURLSearchParams } from "react-router-dom";
 
-export const SearchBox = (): JSX.Element => {
+export const SearchBox = ({
+  searchParams,
+  setSearchParams,
+}: {
+  searchParams: URLSearchParams;
+  setSearchParams: SetURLSearchParams;
+}): JSX.Element => {
   return (
     <div className="bg-[url('/image/Doctor_Holding_Stethoscope.webp')]  rounded-2xl bg-no-repeat bg-center bg-cover bg-fixed h-[300px] w-full">
       <div className="bg-galsses w-full h-full rounded-2xl">
@@ -18,6 +25,15 @@ export const SearchBox = (): JSX.Element => {
               className="w-full outline-hidden"
               name=""
               id=""
+              value={searchParams.get("filter") || ""}
+              onChange={(e) => {
+                const filter = e.target.value;
+                if (filter) {
+                  setSearchParams({ filter });
+                } else {
+                  setSearchParams({});
+                }
+              }}
               placeholder="پزشک یا تخصص مورد نظر خود را جستجو کنید..."
             />
             <button className="text-gray--400">
