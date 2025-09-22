@@ -91,3 +91,8 @@ export type BankOption = {
   logo: string;
   alt: string;
 };
+
+export type GenderOption = {
+  id: string;
+  title: string;
+};

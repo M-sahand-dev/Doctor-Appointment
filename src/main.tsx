@@ -11,6 +11,8 @@ import {
   FAQ,
   LandingPage,
   PaymentInfo,
+  Signin,
+  Signup,
 } from "./components";
 import { SuccessErrorPay } from "./components/detailPage/SuccessErrorPay.tsx";
 
@@ -34,6 +36,9 @@ createRoot(document.getElementById("root")!).render(
             path="/detail/:id/SuccessErrorPay"
             element={<SuccessErrorPay />}
           />
+          {/* page signup and signin ruter */}
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
         </Route>
       </Routes>
     </BrowserRouter>

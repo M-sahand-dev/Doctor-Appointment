@@ -11,6 +11,7 @@ import type {
   Comment,
   DataTiemType,
   Doctor,
+  GenderOption,
   HonorarilyUs,
   NavigationItem,
   Questions,
@@ -551,4 +552,9 @@ export const banks: BankOption[] = [
     logo: "/image/bank/parsian.png",
     alt: "parsian-bank",
   },
+];
+
+export const gender: GenderOption[] = [
+  { id: "female", title: "خانم" },
+  { id: "male", title: "آقا" },
 ];
