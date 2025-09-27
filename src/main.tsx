@@ -42,6 +42,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signup/otp" element={<Otp />} />
+          <Route path="/signin/otp" element={<Otp />} />
         </Route>
       </Routes>
     </BrowserRouter>

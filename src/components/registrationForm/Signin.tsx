@@ -57,12 +57,13 @@ export const Signin = (): JSX.Element => {
                   className="w-full p-4 outline-hidden bg-white border border-gray--200 rounded-1xl"
                 />
               </div>
-              <button
+              <Link
+                to={"/signin/otp"}
                 type="submit"
-                disabled={loading}
+                // disabled={loading}
                 className=" grid place-items-center text-white bg-blue--500 rounded-1xl p-3 cursor-pointer">
                 دریافت کد تایید
-              </button>
+              </Link>
             </form>
             <div className="flex text-Body-M font-medium">
               <p className="text-gray--950">حساب کاربری ندارید؟</p>
