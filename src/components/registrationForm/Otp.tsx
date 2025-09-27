@@ -137,7 +137,7 @@ export const Otp = ({ length = 5 }): JSX.Element => {
               </div>
             </div>
             <Link
-              to={`/`}
+              to={`/userPanel`}
               className="py-2.5 px-16 rounded-1xl bg-blue--500 text-white grid place-items-center">
               ورود
             </Link>
