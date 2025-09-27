@@ -4,6 +4,14 @@ import { gender } from "../../constant";
 
 export const Signup = (): JSX.Element => {
   const [selectGender, setSelectGender] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [phoneNumber, setPhoneNumber] = useState<string>("");
+  const [email, setemail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [rPassword, setRPassword] = useState<string>("");
+  const [error, setError] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
   const handelSelectGender = (genderId: string) => {
     setSelectGender(genderId);
   };
@@ -123,11 +131,13 @@ export const Signup = (): JSX.Element => {
                   </div>
                 ))}
               </div>
-              <button
+              <Link
+                to={`/signup/otp`}
                 type="submit"
+                // disabled={loading}
                 className=" grid place-items-center text-white bg-blue--500 rounded-1xl p-3 cursor-pointer w-full">
                 ثبت نام
-              </button>
+              </Link>
             </form>
             <div className="flex text-Body-M font-medium">
               <p className="text-gray--950">قبلا حساب داشتید؟</p>

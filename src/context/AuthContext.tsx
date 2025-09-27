@@ -1,46 +1,31 @@
-import { createContext, useContext, useState } from "react";
-import type { ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  type JSX,
+} from "react";
+import { Outlet } from "react-router-dom";
 
-interface User {
-  id: string;
-  name: string;
-  email: string;
-}
+type AuthContextType = {
+  session: unknown;
+};
 
-interface AuthContextType {
-  user: User | null;
-  login: (user: User) => void;
-  logout: () => void;
-  isAuthenticated: boolean;
-}
+const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const AuthContext = createContext<AuthContextType>({
-  user: null,
-  login: () => {},
-  logout: () => {},
-  isAuthenticated: false,
-});
-
-export const AuthProvider: React.FC<{ children: ReactNode }> = ({
+export const AuthContextProvider = ({
   children,
-}) => {
-  const [user, setUser] = useState<User | null>(null);
-
-  const login = (userData: User) => {
-    setUser(userData);
-  };
-
-  const logout = () => {
-    setUser(null);
-  };
-
-  const isAuthenticated = !!user;
-
+}: {
+  children: React.ReactNode;
+}): JSX.Element => {
+  const [session, setSession] = useState<unknown>(undefined);
   return (
-    <AuthContext.Provider value={{ user, login, logout, isAuthenticated }}>
-      {children}
+    <AuthContext.Provider value={{ session }}>
+      {children} <Outlet />
     </AuthContext.Provider>
   );
 };
-// eslint-disable-next-line react-refresh/only-export-components
-// export const useAuth = () => useContext(AuthContext);
+
+export const UserAuth = (): AuthContextType | undefined => {
+  return useContext(AuthContext);
+};

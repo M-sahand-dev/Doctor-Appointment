@@ -10,11 +10,13 @@ import {
   DoctorList,
   FAQ,
   LandingPage,
+  Otp,
   PaymentInfo,
   Signin,
   Signup,
 } from "./components";
 import { SuccessErrorPay } from "./components/detailPage/SuccessErrorPay.tsx";
+// import { AuthContextProvider } from "./context/AuthContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -39,6 +41,7 @@ createRoot(document.getElementById("root")!).render(
           {/* page signup and signin ruter */}
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/signup/otp" element={<Otp />} />
         </Route>
       </Routes>
     </BrowserRouter>

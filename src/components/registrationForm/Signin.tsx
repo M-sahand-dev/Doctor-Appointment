@@ -1,7 +1,17 @@
-import type { JSX } from "react";
+import { useState, type JSX } from "react";
 import { Link } from "react-router-dom";
+import { UserAuth } from "../../context/AuthContext";
 
 export const Signin = (): JSX.Element => {
+  const [phoneNumber, setPhoneNumber] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [error, setError] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
+
+  const auth = UserAuth();
+  const session = auth?.session;
+  console.log(session);
+
   return (
     <div className="w-full h-screen bg-white overflow-hidden  grid place-items-center">
       <div className="mx-auto px-24 py-3 max-sm:px-4 mt-20">
@@ -49,6 +59,7 @@ export const Signin = (): JSX.Element => {
               </div>
               <button
                 type="submit"
+                disabled={loading}
                 className=" grid place-items-center text-white bg-blue--500 rounded-1xl p-3 cursor-pointer">
                 دریافت کد تایید
               </button>
