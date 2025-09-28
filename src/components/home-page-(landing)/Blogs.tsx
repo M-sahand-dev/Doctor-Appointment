@@ -24,7 +24,7 @@ export const Blog = (): JSX.Element => {
       <div className="">
         <div className="flex items-center justify-between mb-6">
           <TitleProduct text="">آخرین مقالات</TitleProduct>
-          <SeeAll href="" />
+          <SeeAll href="articlePage" />
         </div>
         <div className="relative">
           <Swiper

@@ -16,8 +16,10 @@ export const DoctorList = (): JSX.Element => {
   const id = useId();
   const [toggleFilter, setToggleFilter] = useState(false);
   const [sortMenu, setSortMenu] = useState(false);
+
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
+
   const [searchParams, setSearchParams] = useSearchParams();
 
   const filteredData = drsData.filter((dr) => {
