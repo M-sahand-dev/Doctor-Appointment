@@ -8,6 +8,7 @@ import {
   AppointmentInfo,
   DetailPage,
   DoctorList,
+  NotFound,
   FAQ,
   LandingPage,
   Otp,
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route path="*" element={<NotFound />} />
           <Route index element={<LandingPage />} />
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/aboutUs" element={<AboutUs />} />
